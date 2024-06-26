@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/images/logo/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  <link rel="stylesheet" href="/css/style-portifolio.css">
+  <link rel="stylesheet" href="/css/style-768.css">
+  <link rel="stylesheet" href="/css/style-480.css">
+  <title>JR Reforma Em Geral</title>
+</head>
+<body>
+  <header id="cabecalho">
+    <img src="images/logo/logo.png" alt="Logo JR Reformas" width="85px" height="85px">
+    <i id="icon-menuBurger" class="fa-solid fa-bars" onclick="showMenu()"></i>
+    <nav id="menu-container">
+      <ul>
+        <li class="links"><a href="#">Home</a></li>
+        <li class="links"><a href="#">Serviços</a></li>
+        <li class="links"><a href="#">Clientes</a></li>
+        <li class="links"><a href="#">Projetos</a></li>
+        <li class="links"><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <article id="home">
+    <section id="text-section">
+      <h1>Transformando Espaços com Excelência</h1>
+      <h2>Especialista em Reforma e Manutenção</h2>
+      <p>Serviços integrados de reforma e manutenção, combinando inovação, sustentabilidade e excelência técnica para garantir resultados duradouros e satisfatórios. 
+        Com missão de transformar espaços com foco total na sua satisfação. 
+        De pequenas melhorias a grandes renovações, entregamos ambientes funcionais e esteticamente agradáveis com qualidade e comprometimento.
+      </p>
+    </section>
+    <figure>
+      <img src="images/backgrounds/background-6.png" alt="img-fundo">
+    </figure>
+  </article>
+
+  <main id="content">
+    <article id="services-article">
+      <section class="section-serviceCard"> 
+        <div class="circle"></div>
+        <i class="fa-solid fa-droplet icon"></i>
+        <p>
+          Serviços de hidráulica, desde instalações completas até pequenos reparos e manutenções. 
+          Materiais de alta qualidade e técnicas avançadas para garantir sistemas eficientes e duradouros.
+        </p>
+      </section>
+      <section class="section-serviceCard">
+        <hr>
+        <div class="circle"></div>
+        <i class="fa-solid fa-screwdriver-wrench icon"></i>
+        <p>
+          Serviços de reforma e conserto, transformando ambientes com eficiência e cuidado.
+          Seja uma renovação total ou pequenos ajustes, com foco em atender necessidades específicas. 
+          </p>
+      </section>
+      <section class="section-serviceCard">
+      <hr>
+        <div class="circle"></div>
+        <i class="fa-solid fa-plug-circle-check icon"></i>
+        <p>
+          Serviços que incluem a instalação de sistemas elétricos, atualizações e reparos de falhas. 
+          Uso de componentes de alta qualidade para assegurar a eficiência e a segurança dos seus ambientes.
+        </p>
+      </section>
+    </article>
+
+    <article id="customer-article">
+      <ul>
+        <li><a href="https://vextreengenharia.com.br">Vextre Engenharia</a></li>
+        <li><a href="https://www.vivareal.com.br/condominio/varanda-ipiranga-ipiranga-id-89d71f7c-c3ad/">Condomínio Varanda Ipiranga</a></li>
+        <li><a href="#">Condomínio Edificio Rio Negro</a></li>
+        <li><a href="#">Condomínio Gran Village Club</a></li>
+        <li><a href="https://www.roofingconstrutora.com.br">Roofing Engenharia e Construção</a></li>
+      </ul>
+    </article>
+
+    <article id="projects-article">
+      <figure>
+        <img id="imageExpand" alt="">
+      </figure>
+      <ul class="images-container">
+        <li><img src="images/projects/projeto-1.jpeg" alt="" onclick="expandImage(this)"></li>
+        <li><img src="images/projects/projeto-2.jpeg" alt="" onclick="expandImage(this)"></li>
+        <li><img src="images/projects/projeto-3.jpeg" alt="" onclick="expandImage(this)"></li>
+        <li><img src="images/projects/projeto-4.jpeg" alt="" onclick="expandImage(this)"></li>
+        <li><img src="images/projects/projeto-5.jpeg" alt="" onclick="expandImage(this)"></li>
+        <li><img src="images/projects/projeto-6.jpeg" alt="" onclick="expandImage(this)"></li>
+        <li><img src="images/projects/projeto-7.jpeg" alt="" onclick="expandImage(this)"></li>
+        <li><img src="images/projects/projeto-8.jpeg" alt="" onclick="expandImage(this)"></li>
+        <li><img src="images/projects/projeto-9.jpeg" alt="" onclick="expandImage(this)"></li>
+        <li><img src="images/projects/projeto-10.jpeg" alt="" onclick="expandImage(this)"></li>
+      </ul>
+      <!--<ul class="images-container">
+        <li><img src="images/projects/projeto-11.jpeg" alt="" onclick="expandImage(this)"></li>
+        <li><img src="images/projects/projeto-12.jpeg" alt="" onclick="expandImage(this)"></li>
+        <li><img src="images/projects/projeto-13.jpeg" alt="" onclick="expandImage(this)"></li>
+        <li><img src="images/projects/projeto-14.jpeg" alt="" onclick="expandImage(this)"></li>
+        <li><img src="images/projects/projeto-15.jpeg" alt="" onclick="expandImage(this)"></li>
+        <li><img src="images/projects/projeto-16.jpeg" alt="" onclick="expandImage(this)"></li>
+        <li><img src="images/projects/projeto-17.jpeg" alt="" onclick="expandImage(this)"></li>
+        <li><img src="images/projects/projeto-18.jpeg" alt="" onclick="expandImage(this)"></li>
+        <li><img src="images/projects/projeto-19.jpeg" alt="" onclick="expandImage(this)"></li>
+        <li><img src="images/projects/projeto-20.jpeg" alt="" onclick="expandImage(this)"></li>
+      </ul>-->
+    </article>
+
+  </main>
+  <footer id="rodape">
+    <article id="contact-article">
+      <section id="contact">
+          <h3>Entre em contato</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis consequatur nihil ab beatae nesciunt atque odio, voluptas excepturi autem. Consequatur natus optio distinctio, alias voluptas sint explicabo et voluptatum deleniti!</p>
+          <i class="fa-regular fa-envelope icon-contact" aria-hidden="true">
+            <p>pedro.cirojunior@hotmail.com</p>
+          </i>
+          <i class="fa-brands fa-whatsapp icon-contact" aria-hidden="true">
+            <p>(11) 97195-1905</p>
+          </i>   
+      </section>
+      <form action="#" method="POST" id="form">
+          <input type="text" name="fullName" placeholder="Nome Completo">
+          <input type="email" name="email" placeholder="Email">
+          <textarea name="message" placeholder="Envie uma mensagem"></textarea>
+          <input class="form-button" type="submit" value="Submit">
+      </form>
+    </article>
+  </footer>
+  <script src="js/expand-image.js"></script>
+  <script src="js/showMenu.js"></script>
+</body>
+</html>

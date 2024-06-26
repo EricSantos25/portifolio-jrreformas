@@ -1,0 +1,169 @@
+@media screen and (max-width: 768px){
+
+    h1{
+        font-size: 20pt;
+        font-weight: 700;
+        font-family: "Open Sans", sans-serif;
+    }
+    
+    h2{ 
+        font-size: 15pt;
+        font-style: italic;
+        font-family: "Montserrat Alternates", sans-serif;
+    }
+    
+    p{
+        font-size: 10pt;
+        line-height: 20px;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    div.container header aside.home-text{
+        margin: auto 0;
+        padding: 1em 2em;
+        max-width: 55%;
+    }
+
+    section.services-section{
+        padding: 2em;
+        background-color: #02a0df;
+    }
+    
+    section.services-section div.cards-container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    section.services-section div.cards-container article.service-card{
+        margin: 1em;
+        padding: 2em;
+        max-width: 400px;
+        text-align: center;
+        border-radius: 20px;
+        justify-content: space-around;
+        background-color: #f3f0f0;
+    }
+    
+    section.services-section div.cards-container article.service-card .icon{
+        font-size: 70pt;
+        color: #02a0df;
+        border-radius: 50%;
+    }
+    
+    
+    section.services-section div.cards-container article.service-card p{
+        margin-top: 2em;
+        color: #02a0df;
+        font-weight: 600;
+    }
+
+    /*PROJECTS*/
+    section.projects-section{
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #212121;
+    }
+
+
+    section.projects-section ul.images-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section.projects-section ul.images-container li img{
+        width: 160px;
+        height: 160px;
+        cursor: pointer;
+        margin: 10px 5px;
+    }
+
+    section.projects-section ul.images-container li img:hover, li img:focus{
+        opacity: 30%;
+
+    }
+
+    section.projects-section figure img{
+        width: 300px;
+        height: 300px;
+    }
+    
+    /*CONTATO*/
+    footer section.contact-container{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #02a0df;
+    }
+    
+    footer section.contact-container article h3{
+        font-size: 20pt;
+        color: #F5F564;
+        font-weight: 600;
+        margin-bottom: 1em;
+        text-transform: uppercase;
+    }
+    
+    footer section.contact-container article p{
+        color: #f3f0f0;
+    }
+    
+    footer section.contact-container article i.icon-contact{
+        display: flex;
+        font-size: 20pt;
+        margin-top: 1em;
+        color: #F5F564;
+        width: max-content;
+        align-items: center;
+    }
+    
+    footer section.contact-container article i.icon-contact p{
+        font-size: 10pt;
+        margin-left: 1em;
+        font-weight: 800;
+    }
+    
+    footer section.contact-container form{
+        padding: 0;
+        color: #f3f0f0;
+    }
+    
+    footer section.contact-container form input{
+        outline: 0;
+        padding: 1em;
+        font-style: none;
+        background: none;
+        color: #f3f0f0;
+        margin-bottom: 2em;
+        border: #f3f0f0 2px solid;
+    }
+    
+    footer section.contact-container form textarea{
+        outline: 0;
+        padding: 1em;
+        color: #f3f0f0;
+        font-style: none;
+        background: none;
+        margin-bottom: 2em;
+        border: #f3f0f0 2px solid;
+    }
+    
+    footer section.contact-container form input.form-button{
+        border: none;
+        border-radius: 10px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        width: max-content;
+        font-size: 13pt;
+        background-color: #B71C1C;
+    }
+    
+    footer section.contact-container form input.form-button:hover{
+        cursor: pointer;
+        transition: 0.5s;
+        color: #B71C1C;
+        background-color: #f3f0f0;
+    }
+}

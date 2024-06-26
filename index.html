@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/logo/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>JR Reforma Em Geral</title> <!--ALTERAR-->
+</head>
+<body>
+    <main class="container">        
+        <header>
+            <nav class="menu-container">
+                <img src="images/logo/logo.png" alt="Logo JR Reformas" width="85px" height="85px">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Clientes</a></li>
+                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+            <aside class="home-text">
+                <h1>Transformando Espaços com Excelência</h1>
+                <h2>Especialista em Reforma e Manutenção</h2>
+                <p>Serviços integrados de reforma e manutenção, combinando inovação, sustentabilidade e excelência técnica para garantir resultados duradouros e satisfatórios. 
+                    Com missão de transformar espaços com foco total na sua satisfação. 
+                    De pequenas melhorias a grandes renovações, entregamos ambientes funcionais e esteticamente agradáveis com qualidade e comprometimento.
+                </p>
+            </aside>
+        </header>
+        
+        <section class="services-section">
+            <div class="cards-container">
+                <article class="service-card"> 
+                    <i class="fa-solid fa-droplet icon" aria-hidden="true"></i>
+                    <p>
+                        Serviços de hidráulica, desde instalações completas até pequenos reparos e manutenções. 
+                        Materiais de alta qualidade e técnicas avançadas para garantir sistemas eficientes e duradouros.
+                    </p>
+                </article>
+                <article class="service-card">
+                    <i class="fa-solid fa-screwdriver-wrench icon" aria-hidden="true"></i>
+                    <p>
+                        Serviços de reforma e conserto, transformando ambientes com eficiência e cuidado.
+                        Seja uma renovação total ou pequenos ajustes, com foco em atender necessidades específicas. 
+                    </p>
+                </article>
+                <article class="service-card">
+                    <i class="fa-solid fa-plug-circle-check icon" aria-hidden="true"></i>
+                    <p>
+                        Serviços que incluem a instalação de sistemas elétricos, reparos de falhas e atualizações. 
+                        Uso de componentes de alta qualidade para assegurar a eficiência e a segurança dos seus ambientes.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="customer-section">
+            <ul>
+                <li>Condomínio Varanda Ipiranga</li>
+                <li>Condomínio Gran Village Club</li>
+                <li>Condomínio Edificio Rio Negro</li>
+                <li>Roofing Engenharia e Construção</li>
+                <li>Vextre Engenharia</li>
+            </ul>
+        </section>
+
+        <section class="projects-section">
+            <ul class="images-container">
+                <li><img src="images/projects/projeto-1.jpeg" alt="" onclick="expandImage(this)"></li>
+                <li><img src="images/projects/projeto-2.jpeg" alt="" onclick="expandImage(this)"></li>
+                <li><img src="images/projects/projeto-3.jpeg" alt="" onclick="expandImage(this)"></li>
+                <li><img src="images/projects/projeto-4.jpeg" alt="" onclick="expandImage(this)"></li>
+                <li><img src="images/projects/projeto-5.jpeg" alt="" onclick="expandImage(this)"></li>
+                <li><img src="images/projects/projeto-6.jpeg" alt="" onclick="expandImage(this)"></li>
+                <li><img src="images/projects/projeto-7.jpeg" alt="" onclick="expandImage(this)"></li>
+                <li><img src="images/projects/projeto-8.jpeg" alt="" onclick="expandImage(this)"></li>
+                <li><img src="images/projects/projeto-9.jpeg" alt="" onclick="expandImage(this)"></li>
+                <li><img src="images/projects/projeto-10.jpeg" alt="" onclick="expandImage(this)"></li>
+            </ul>
+            <figure>
+                <img id="imageExpand" alt="">
+            </figure>
+            <ul class="images-container">
+                <li><img src="images/projects/projeto-11.jpeg" alt="" onclick="expandImage(this)"></li>
+                <li><img src="images/projects/projeto-12.jpeg" alt="" onclick="expandImage(this)"></li>
+                <li><img src="images/projects/projeto-13.jpeg" alt="" onclick="expandImage(this)"></li>
+                <li><img src="images/projects/projeto-14.jpeg" alt="" onclick="expandImage(this)"></li>
+                <li><img src="images/projects/projeto-15.jpeg" alt="" onclick="expandImage(this)"></li>
+                <li><img src="images/projects/projeto-16.jpeg" alt="" onclick="expandImage(this)"></li>
+                <li><img src="images/projects/projeto-17.jpeg" alt="" onclick="expandImage(this)"></li>
+                <li><img src="images/projects/projeto-18.jpeg" alt="" onclick="expandImage(this)"></li>
+                <li><img src="images/projects/projeto-19.jpeg" alt="" onclick="expandImage(this)"></li>
+                <li><img src="images/projects/projeto-20.jpeg" alt="" onclick="expandImage(this)"></li>
+            </ul>
+        </section>
+        
+        <section class="contact-container">
+            <article>
+                <h3>Entre em contato</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis consequatur nihil ab beatae nesciunt atque odio, voluptas excepturi autem. Consequatur natus optio distinctio, alias voluptas sint explicabo et voluptatum deleniti!</p>
+                <i class="fa-regular fa-envelope icon-contact" aria-hidden="true"></i>
+                <p>pedro.cirojunior@hotmail.com</p>
+                <i class="fa-brands fa-whatsapp icon-contact" aria-hidden="true"></i>
+                <p>(11) 97195-1905</p>
+            </article>
+            <form action="/send-message" method="POST" class="form">
+                <input type="text" name="fullName" placeholder="Nome Completo">
+                <input type="email" name="email" placeholder="Email">
+                <textarea name="message" placeholder="Envie uma mensagem"></textarea>
+                <fieldset>
+                    <input type="checkbox" name="terms" id="confirm-data">
+                    <label for="confirm-data">Eu aceito os <a href="#">Termos de uso</a></label>
+                </fieldset>
+                <input class="form-button" type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <script src="js/slide.js"></script>
+    <script src="js/expand-image.js"></script>
+</body>
+</html>
