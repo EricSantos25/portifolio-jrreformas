@@ -13,20 +13,20 @@
 </head>
 <body>
   <header id="cabecalho">
-    <img src="images/logo/logo.png" alt="Logo JR Reformas" width="85px" height="85px">
+    <a href="#home-article"><img src="images/logo/logo.png" alt="Logo JR Reformas" width="85px" height="85px"></a>
     <i id="icon-menuBurger" class="fa-solid fa-bars" onclick="showMenu()"></i>
     <nav id="menu-container">
       <ul>
-        <li class="links"><a href="#">Home</a></li>
-        <li class="links"><a href="#">Serviços</a></li>
-        <li class="links"><a href="#">Clientes</a></li>
-        <li class="links"><a href="#">Projetos</a></li>
-        <li class="links"><a href="#">Contato</a></li>
+        <li class="links"><a id="home" href="#home-article" onclick="scrollSection(0)">Home</a></li>
+        <li class="links"><a id="services" href="#services-article" onclick="scrollSection(100)">Serviços</a></li>
+        <li class="links"><a id="customers" href="#customer-article" onclick="scrollSection(300)" >Clientes</a></li>
+        <li class="links"><a id="projects" href="#projects-article" onclick="scrollSection(600)">Projetos</a></li>
+        <li class="links"><a id="contact" href="#contact-article" onclick="scrollSection(900)">Contato</a></li>
       </ul>
     </nav>
   </header>
 
-  <article id="home">
+  <article id="home-article">
     <section id="text-section">
       <h1>Transformando Espaços com Excelência</h1>
       <h2>Especialista em Reforma e Manutenção</h2>
@@ -79,48 +79,117 @@
     </article>
 
     <article id="projects-article">
-      <figure>
-        <img id="imageExpand" alt="">
-      </figure>
       <ul class="images-container">
-        <li><img src="images/projects/projeto-1.jpeg" alt="" onclick="expandImage(this)"></li>
-        <li><img src="images/projects/projeto-2.jpeg" alt="" onclick="expandImage(this)"></li>
-        <li><img src="images/projects/projeto-3.jpeg" alt="" onclick="expandImage(this)"></li>
-        <li><img src="images/projects/projeto-4.jpeg" alt="" onclick="expandImage(this)"></li>
-        <li><img src="images/projects/projeto-5.jpeg" alt="" onclick="expandImage(this)"></li>
-        <li><img src="images/projects/projeto-6.jpeg" alt="" onclick="expandImage(this)"></li>
-        <li><img src="images/projects/projeto-7.jpeg" alt="" onclick="expandImage(this)"></li>
-        <li><img src="images/projects/projeto-8.jpeg" alt="" onclick="expandImage(this)"></li>
-        <li><img src="images/projects/projeto-9.jpeg" alt="" onclick="expandImage(this)"></li>
-        <li><img src="images/projects/projeto-10.jpeg" alt="" onclick="expandImage(this)"></li>
+        <li><img src="images/projects/projeto-1.jpeg" alt="" onclick="openModal();currentSlide(1)"></li>
+        <li><img src="images/projects/projeto-2.jpeg" alt="" onclick="openModal();currentSlide(2)"></li>
+        <li><img src="images/projects/projeto-3.jpeg" alt="" onclick="openModal();currentSlide(3)"></li>
+        <li><img src="images/projects/projeto-4.jpeg" alt="" onclick="openModal();currentSlide(4)"></li>
+        <li><img src="images/projects/projeto-5.jpeg" alt="" onclick="openModal();currentSlide(5)"></li>
+        <li><img src="images/projects/projeto-6.jpeg" alt="" onclick="openModal();currentSlide(6)"></li>
+        <li><img src="images/projects/projeto-7.jpeg" alt="" onclick="openModal();currentSlide(7)"></li>
+        <li><img src="images/projects/projeto-8.jpeg" alt="" onclick="openModal();currentSlide(8)"></li>
+        <li><img src="images/projects/projeto-9.jpeg" alt="" onclick="openModal();currentSlide(9)"></li>
+        <li><img src="images/projects/projeto-10.jpeg" alt="" onclick="openModal();currentSlide(10)"></li>
+        <li><img src="images/projects/projeto-11.jpeg" alt="" onclick="openModal();currentSlide(11)"></li>
+        <li><img src="images/projects/projeto-12.jpeg" alt="" onclick="openModal();currentSlide(12)"></li>
+        <li><img src="images/projects/projeto-13.jpeg" alt="" onclick="openModal();currentSlide(13)"></li>
+        <li><img src="images/projects/projeto-14.jpeg" alt="" onclick="openModal();currentSlide(14)"></li>
+        <li><img src="images/projects/projeto-15.jpeg" alt="" onclick="openModal();currentSlide(15)"></li>
+        <li><img src="images/projects/projeto-16.jpeg" alt="" onclick="openModal();currentSlide(16)"></li>
+        <li><img src="images/projects/projeto-17.jpeg" alt="" onclick="openModal();currentSlide(17)"></li>
+        <li><img src="images/projects/projeto-18.jpeg" alt="" onclick="openModal();currentSlide(18)"></li>
+        <li><img src="images/projects/projeto-19.jpeg" alt="" onclick="openModal();currentSlide(19)"></li>
+        <li><img src="images/projects/projeto-20.jpeg" alt="" onclick="openModal();currentSlide(20)"></li>
       </ul>
-      <!--<ul class="images-container">
-        <li><img src="images/projects/projeto-11.jpeg" alt="" onclick="expandImage(this)"></li>
-        <li><img src="images/projects/projeto-12.jpeg" alt="" onclick="expandImage(this)"></li>
-        <li><img src="images/projects/projeto-13.jpeg" alt="" onclick="expandImage(this)"></li>
-        <li><img src="images/projects/projeto-14.jpeg" alt="" onclick="expandImage(this)"></li>
-        <li><img src="images/projects/projeto-15.jpeg" alt="" onclick="expandImage(this)"></li>
-        <li><img src="images/projects/projeto-16.jpeg" alt="" onclick="expandImage(this)"></li>
-        <li><img src="images/projects/projeto-17.jpeg" alt="" onclick="expandImage(this)"></li>
-        <li><img src="images/projects/projeto-18.jpeg" alt="" onclick="expandImage(this)"></li>
-        <li><img src="images/projects/projeto-19.jpeg" alt="" onclick="expandImage(this)"></li>
-        <li><img src="images/projects/projeto-20.jpeg" alt="" onclick="expandImage(this)"></li>
-      </ul>-->
-    </article>
+      <figure id="modal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <section class="modal-content">
 
+          <li class="slides">
+            <img src="images/projects/projeto-1.jpeg" alt="" onclick="openModal()">
+          </li>
+          <li class="slides">
+            <img src="images/projects/projeto-2.jpeg" alt="" onclick="openModal()">
+          </li>
+          <li class="slides">
+            <img src="images/projects/projeto-3.jpeg" alt="" onclick="openModal()">
+          </li>
+          <li class="slides">
+            <img src="images/projects/projeto-4.jpeg" alt="" onclick="openModal()">
+          </li>
+          <li class="slides">
+            <img src="images/projects/projeto-5.jpeg" alt="" onclick="openModal()">
+          </li>
+          <li class="slides">
+            <img src="images/projects/projeto-6.jpeg" alt="" onclick="openModal()">
+          </li>
+          <li class="slides">
+            <img src="images/projects/projeto-7.jpeg" alt="" onclick="openModal()">
+          </li>
+          <li class="slides">
+            <img src="images/projects/projeto-8.jpeg" alt="" onclick="openModal()">
+          </li>
+          <li class="slides">
+            <img src="images/projects/projeto-9.jpeg" alt="" onclick="openModal()">
+          </li>
+          <li class="slides">
+            <img src="images/projects/projeto-10.jpeg" alt="" onclick="openModal()">
+          </li>
+          <li class="slides">
+            <img src="images/projects/projeto-11.jpeg" alt="" onclick="openModal()">
+          </li>
+          <li class="slides">
+            <img src="images/projects/projeto-12.jpeg" alt="" onclick="openModal()">
+          </li>
+          <li class="slides">
+            <img src="images/projects/projeto-13.jpeg" alt="" onclick="openModal()">
+          </li>
+          <li class="slides">
+            <img src="images/projects/projeto-14.jpeg" alt="" onclick="openModal()">
+          </li>
+          <li class="slides">
+            <img src="images/projects/projeto-15.jpeg" alt="" onclick="openModal()">
+          </li>
+          <li class="slides">
+            <img src="images/projects/projeto-16.jpeg" alt="" onclick="openModal()">
+          </li>
+          <li class="slides">
+            <img src="images/projects/projeto-17.jpeg" alt="" onclick="openModal()">
+          </li>
+          <li class="slides">
+            <img src="images/projects/projeto-18.jpeg" alt="" onclick="openModal()">
+          </li>
+          <li class="slides">
+            <img src="images/projects/projeto-19.jpeg" alt="" onclick="openModal()">
+          </li>
+          <li class="slides">
+            <img src="images/projects/projeto-20.jpeg" alt="" onclick="openModal()">
+          </li>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </section>
+      </figure>
+    </article>
   </main>
   <footer id="rodape">
     <article id="contact-article">
       <section id="contact">
           <h3>Entre em contato</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis consequatur nihil ab beatae nesciunt atque odio, voluptas excepturi autem. Consequatur natus optio distinctio, alias voluptas sint explicabo et voluptatum deleniti!</p>
+          <p>
+            Se você tem um projeto em mente ou precisa de manutenção, estamos prontos para ajudar. 
+            Entre em contato conosco para discutir suas necessidades e como podemos transformar suas ideias em realidade.
+          </p>
           <i class="fa-regular fa-envelope icon-contact" aria-hidden="true">
             <p>pedro.cirojunior@hotmail.com</p>
           </i>
           <i class="fa-brands fa-whatsapp icon-contact" aria-hidden="true">
             <p>(11) 97195-1905</p>
-          </i>   
-      </section>
+          </i>
+          <p>
+            Estamos ansiosos para colaborar com você!
+          </p>
+        </section>
       <form action="#" method="POST" id="form">
           <input type="text" name="fullName" placeholder="Nome Completo">
           <input type="email" name="email" placeholder="Email">
@@ -131,5 +200,6 @@
   </footer>
   <script src="js/expand-image.js"></script>
   <script src="js/showMenu.js"></script>
+  <script src="js/slide.js"></script>
 </body>
 </html>

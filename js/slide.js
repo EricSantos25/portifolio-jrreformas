@@ -1,36 +1,31 @@
-let slideIndex = 1
-
-showSlides(slideIndex)
-
-function plusSlides(slideNumber) {
-    showSlides(slideIndex += slideNumber)
+function openModal() {
+    document.getElementById("modal").style.display = "block";
 }
 
-function showSlides(slideNumber) {
-    let slideImages = document.getElementsByClassName("carrosel")
-    if (slideNumber > slideImages.length) {
-        slideIndex = 1
-    }
-
-    if (slideNumber < 1) {
-        slideIndex = slideImages.length
-    }
-
-    for (let index = 0; index < slideImages.length; index++) {
-        slideImages[index].style.display = "none"
-    }
-
-    slideImages[slideIndex-1].style.display = "block"
+function closeModal() {
+    document.getElementById("modal").style.display = "none";
 }
 
+let slideIndex = 1;
+showSlides(slideIndex);
 
-const clientes = document.getElementsByClassName("customer-slide")
-
-function checarFinalDaPagina() {
-    const tamanho = clientes.getBoundingClientRect();
-    if (tamanho.left >= window.innerWidth) {
-        clientes.style.left = '-50px'
-    }
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
 
-setInterval(checarFinalDaPagina, 100)
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("slides");
+
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slides[slideIndex-1].style.display = "block";
+  }
