@@ -13,11 +13,11 @@
 </head>
 <body>
   <header id="cabecalho">
-    <a href="#home-article"><img src="images/logo/logoV2.png" alt="Logo JR Reformas" width="100px" height="100px"></a>
+    <a href="#home-article"><img src="images/logo/apple-touch-icon.png" alt="Logo JR Reformas" width="100px" height="100px"></a>
     <i id="icon-menuBurger" class="fa-solid fa-bars" onclick="showMenu()"></i>
     <nav id="menu-container">
       <ul>
-        <li class="links"><a id="home" href="#home-article" onclick="scrollSection(0)">Home</a></li>
+        <li class="links"><a id="home" href="#home-article" onclick="scrollSection(600)">Home</a></li>
         <li class="links"><a id="services" href="#services-article" onclick="scrollSection(100)">Serviços</a></li>
         <li class="links"><a id="customers" href="#customer-article" onclick="scrollSection(300)" >Clientes</a></li>
         <li class="links"><a id="projects" href="#projects-article" onclick="scrollSection(600)">Projetos</a></li>
@@ -181,25 +181,25 @@
             Entre em contato conosco para discutir suas necessidades e como podemos transformar suas ideias em realidade.
           </p>
           <i class="fa-regular fa-envelope icon-contact" aria-hidden="true">
-            <p>pedro.cirojunior@hotmail.com</p>
+            <p><a href="mailto:pedro.cirojunior@hotmail.com">pedro.cirojunior@hotmail.com</a></p>
           </i>
           <i class="fa-brands fa-whatsapp icon-contact" aria-hidden="true">
-            <p>(11) 97195-1905</p>
+            <p><a href="https://api.whatsapp.com/send/?phone=%2B5511971951905&text=Ol%C3%A1%2C%20desejo%20conhecer%20a%20JR%20Reformas&app_absent=0" target="_blank">(11) 97195-1905</a></p>
           </i>
           <p>
             Estamos ansiosos para colaborar com você!
           </p>
         </section>
-      <form action="#" method="POST" id="form">
-          <input type="text" name="fullName" placeholder="Nome Completo">
-          <input type="email" name="email" placeholder="Email">
-          <textarea name="message" placeholder="Envie uma mensagem"></textarea>
-          <input class="form-button" type="submit" value="Submit">
-      </form>
+        <form id="formulario">
+          <input type="text" id="nome" placeholder="Nome" required>
+          <input type="email" id="email" placeholder="Email" required>
+          <textarea id="comentario" placeholder="Comentário" required></textarea>
+          <button class="form-button" type="button" onclick="enviarForms()">Enviar</button>
+        </form>
     </article>
   </footer>
-  <script src="js/expand-image.js"></script>
   <script src="js/showMenu.js"></script>
   <script src="js/slide.js"></script>
+  <script src="js/form.js"></script>
 </body>
 </html>

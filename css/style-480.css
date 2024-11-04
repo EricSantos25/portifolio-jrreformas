@@ -36,13 +36,14 @@
         font-size: 200%;
     }
     
-    header#cabecalho nav#menu-container{
+    header#cabecalho nav#menu-container {
         top: 100%;
-        left: -50%;
-        width: 50%;
+        left: -100%; /* O menu começa oculto */
+        width: 100%;
         text-align: center;
         position: absolute;
         background-color: #333;
+        transition: left 0.3s ease; /* Adiciona uma transição suave */
     }
     
     header#cabecalho nav#menu-container ul li{
@@ -164,9 +165,12 @@
         font-family: "Open Sans", sans-serif;
         text-transform: uppercase;
     }
-    
+
     footer#rodape article#contact-article section#contact p{
         margin: 1em 0;
+    }
+    
+    footer#rodape article#contact-article section#contact p a{
         color: #f3f0f0;
         font-weight: 500;
         text-align: justify;
@@ -225,10 +229,12 @@
         background-color: #333;
     }
     
-    footer#rodape article#contact-article form input.form-button{
+    footer#rodape article#contact-article form button.form-button{
         border: none;
+        padding: 0.5em;
         font-size: 13pt;
         font-weight: 700;
+        color: #f3f0f0;
         width: max-content;
         border-radius: 10px;
         letter-spacing: 4px;
@@ -237,7 +243,7 @@
         background-color: #333;
     }
     
-    footer#rodape article#contact-article form input.form-button:focus{
+    footer#rodape article#contact-article form button.form-button:hover{
         cursor: pointer;
         transition: 0.5s;
         color: #0e4477;

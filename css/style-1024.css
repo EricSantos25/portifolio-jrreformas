@@ -1,19 +1,19 @@
-@media screen and (min-width: 1024px){
-    h1{
+@media screen and (min-width: 1024px) {
+    h1 {
         font-size: 140%;
         font-weight: 800;
         text-transform: uppercase;
         font-family: "Open Sans", sans-serif;
     }
-    
-    h2{ 
+
+    h2 {
         font-size: 130%;
         font-weight: 600;
         font-style: italic;
         font-family: "Open Sans", sans-serif;
     }
-    
-    p{
+
+    p {
         font-size: 115%;
         font-weight: 600;
         text-align: justify;
@@ -22,57 +22,57 @@
     }
 
     /*-----------MENU-----------*/
-    header#cabecalho{
+    header#cabecalho {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
         /*box-shadow: 0 2px 20px 5px #212121;*/
     }
-    
-    header#cabecalho i#icon-menuBurger{
+
+    header#cabecalho i#icon-menuBurger {
         font-size: 200%;
         display: none;
     }
-    
-    header#cabecalho nav#menu-container{
+
+    header#cabecalho nav#menu-container {
         left: 0;
         position: relative;
         text-align: center;
         background: none;
     }
-    
-    header#cabecalho nav#menu-container ul{
+
+    header#cabecalho nav#menu-container ul {
         margin: 0;
         display: inline;
     }
 
-    header#cabecalho nav#menu-container ul li{
+    header#cabecalho nav#menu-container ul li {
         margin: 5px;
         display: inline;
     }
-        
-    header#cabecalho nav#menu-container ul li a{
+
+    header#cabecalho nav#menu-container ul li a {
         color: #0e4477;
         font-weight: 700;
         text-decoration: none;
         font-family: "Open Sans", sans-serif;
     }
 
-    header#cabecalho nav#menu-container ul li a:hover{
+    header#cabecalho nav#menu-container ul li a:hover {
         color: #333;
         transition: 0.6s;
         border-bottom: 1px #333 solid;
     }
-    
-    header#cabecalho nav#menu-container ul li a:focus{
+
+    header#cabecalho nav#menu-container ul li a:focus {
         transform: translateY(-50px);
         color: #333;
         border-bottom: 1px #333 solid;
     }
 
     /*-----------HOME-----------*/
-    article#home-article{
+    article#home-article {
         padding: 2em;
         display: flex;
         align-items: center;
@@ -81,44 +81,44 @@
         background-color: #f3f0f0;
     }
 
-    article#home-article section#text-section h1{
+    article#home-article section#text-section h1 {
         margin-top: 1em;
         color: #0e4477;
         text-align: left;
     }
 
-    article#home-article section#text-section h2{
+    article#home-article section#text-section h2 {
         margin: 1em 0;
         color: #0e4477;
         border-bottom: #eeee52 solid 2px;
     }
 
-    article#home-article section#text-section p{
+    article#home-article section#text-section p {
         margin: 1em 0;
         color: #333;
     }
 
-    article#home-article img{
+    article#home-article img {
         height: 55%;
         width: 55%;
     }
 
     /*-----------SERVICES-----------*/
-    main#content article#services-article{
+    main#content article#services-article {
         padding: 1em;
         display: flex;
         align-items: center;
         flex-direction: row;
         background-color: #0e4477;
     }
-        
-    main#content article#services-article section.section-serviceCard hr{
+
+    main#content article#services-article section.section-serviceCard hr {
         display: none;
     }
 
-    main#content article#services-article section.section-serviceCard{
+    main#content article#services-article section.section-serviceCard {
         margin: 1em;
-        padding: 1  em;
+        padding: 1 em;
         max-width: 400px;
         text-align: center;
         position: relative;
@@ -127,21 +127,21 @@
         background-color: #f3f0f0;
     }
 
-    main#content article#services-article section.section-serviceCard i{
+    main#content article#services-article section.section-serviceCard i {
         margin: 0.5em 0;
         font-size: 500%;
         color: #0e4477;
         text-align: center;
     }
-        
-    main#content article#services-article section.section-serviceCard p{
+
+    main#content article#services-article section.section-serviceCard p {
         font-size: 115%;
         color: #0e4477;
         text-align: justify;
         font-weight: 600;
     }
-    
-    main#content article#services-article section.section-serviceCard div.circle{
+
+    main#content article#services-article section.section-serviceCard div.circle {
         width: 25px;
         height: 25px;
         border-radius: 50px;
@@ -150,22 +150,22 @@
     }
 
     /*-----------COSTUMER-----------*/
-    main#content article#customer-article{
+    main#content article#customer-article {
         padding: 2em;
         background-color: #f3f0f0;
     }
-    
-    main#content article#customer-article ul li{
+
+    main#content article#customer-article ul li {
         margin: 2em 0;
         font-weight: 600;
         text-align: center;
         text-transform: uppercase;
         font-family: "Opens Sans", sans-serif;
     }
-    
+
     /*-----------PROJECTS-----------*/
-    
-    main#content article#projects-article{
+
+    main#content article#projects-article {
         padding: 2em;
         display: flex;
         align-items: center;
@@ -174,40 +174,40 @@
         background-color: #333;
     }
 
-    main#content article#projects-article ul{
+    main#content article#projects-article ul {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
     }
 
-    main#content article#projects-article ul li img{
+    main#content article#projects-article ul li img {
         margin: 1em;
         width: 135px;
         height: 135px;
         cursor: pointer;
     }
-    
-    main#content img#imageExpand{
+
+    main#content img#imageExpand {
         border-radius: 20px;
         height: 20em;
         width: 20em;
     }
 
     /*-----------FORM-----------*/
-    footer#rodape article#contact-article{
+    footer#rodape article#contact-article {
         display: flex;
         align-items: start;
-        justify-content: space-between;
+        justify-content: space-around;
         background-color: #0e4477;
     }
-    
-    footer#rodape article#contact-article section#contact{
+
+    footer#rodape article#contact-article section#contact {
         height: 100%;
         width: 50%;
     }
 
-    footer#rodape article#contact-article section#contact h3{
+    footer#rodape article#contact-article section#contact h3 {
         font-size: 150%;
         color: #eeee52;
         font-weight: 600;
@@ -216,33 +216,37 @@
         text-transform: uppercase;
         font-family: "Open Sans", sans-serif;
     }
-    
-    footer#rodape article#contact-article section#contact p{
+
+    footer#rodape article#contact-article section#contact p {
         margin: 1em 0;
+    }
+
+    footer#rodape article#contact-article section#contact p a {
+        margin: 0;
         color: #f3f0f0;
         font-weight: 500;
         text-align: justify;
     }
-    
-    footer#rodape article#contact-article section#contact i.icon-contact{
+
+    footer#rodape article#contact-article section#contact i.icon-contact {
         display: flex;
         font-size: 20pt;
         color: #eeee52;
         width: max-content;
         align-items: center;
     }
-        
-    footer#rodape article#contact-article section#contact i.icon-contact p{ 
+
+    footer#rodape article#contact-article section#contact i.icon-contact p {
         font-size: 12pt;
         font-weight: 800;
     }
-    
-    footer#rodape article#contact-article form{
+
+    footer#rodape article#contact-article form {
         height: 100%;
         width: 45%;
     }
-    
-    footer#rodape article#contact-article form input{
+
+    footer#rodape article#contact-article form input {
         outline: 0;
         width: 100%;
         padding: 1em;
@@ -253,11 +257,11 @@
         border: #f3f0f0 2px solid;
     }
 
-    footer#rodape article#contact-article form input:hover{
+    footer#rodape article#contact-article form input:hover {
         background-color: #333;
     }
-    
-    footer#rodape article#contact-article form textarea{
+
+    footer#rodape article#contact-article form textarea {
         outline: 0;
         width: 100%;
         padding: 1em;
@@ -268,11 +272,12 @@
         border: #f3f0f0 2px solid;
     }
 
-    footer#rodape article#contact-article form textarea:hover{
+    footer#rodape article#contact-article form textarea:hover {
         background-color: #333;
     }
-    
-    footer#rodape article#contact-article form input.form-button{
+
+    footer#rodape article#contact-article form button.form-button {
+        padding: 1em;
         border: none;
         cursor: pointer;
         font-size: 10pt;
@@ -285,8 +290,8 @@
         background-color: #333;
         text-transform: uppercase;
     }
-    
-    footer#rodape article#contact-article form input.form-button:focus{
+
+    footer#rodape article#contact-article form button.form-button:hover {
         cursor: pointer;
         transition: 0.5s;
         color: #0e4477;
@@ -323,7 +328,8 @@
         font-weight: bold;
     }
 
-    .close:hover, .close:focus {
+    .close:hover,
+    .close:focus {
         color: #999;
         text-decoration: none;
         cursor: pointer;
@@ -333,7 +339,7 @@
         display: none;
     }
 
-    .slides img{
+    .slides img {
         overflow: hidden;
         height: 30em;
         width: 30em;
@@ -343,7 +349,8 @@
         cursor: pointer;
     }
 
-    .prev, .next {
+    .prev,
+    .next {
         cursor: pointer;
         position: absolute;
         top: 50%;
@@ -364,7 +371,8 @@
         border-radius: 3px 0 0 3px;
     }
 
-    .prev:hover, .next:hover {
+    .prev:hover,
+    .next:hover {
         background-color: rgba(0, 0, 0, 0.8);
     }
 }
