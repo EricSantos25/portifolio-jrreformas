@@ -71,6 +71,23 @@
         border-bottom: 1px #333 solid;
     }
 
+    #cabecalho {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        position: relative;
+    }
+
+    #icon-menuBurger {
+        font-size: 24px;
+        cursor: pointer;
+        display: none;
+        /* Ocultar no desktop */
+    }
+
     /*-----------HOME-----------*/
     article#home-article {
         padding: 2em;
