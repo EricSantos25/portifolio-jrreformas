@@ -125,6 +125,7 @@
         padding: 1em;
         display: flex;
         align-items: center;
+        justify-content: center;
         flex-direction: row;
         background-color: #0e4477;
     }
