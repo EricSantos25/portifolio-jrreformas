@@ -1,46 +1,309 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+:root {
+  --color-orange: #F97316;
+  --color-orange-dark: #EA580C;
+  --color-orange-light: #FB923C;
+  --color-black: #111111;
+  --color-graphite: #1C1917;
+  --color-gray-dark: #3F3F46;
+  --color-gray: #71717A;
+  --color-gray-light: #E4E4E7;
+  --color-bg-light: #F4F4F5;
+  --color-white: #FFFFFF;
+  --color-blue-dark: #0F172A;
+  --color-whatsapp: #25D366;
+  --color-whatsapp-dark: #1EBE5D;
+  --font-heading: 'Montserrat Alternates', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+  --radius: 12px;
+  --radius-lg: 20px;
+  --shadow: 0 10px 30px rgba(17, 17, 17, 0.08);
+  --shadow-lg: 0 20px 45px rgba(17, 17, 17, 0.16);
+  --transition: 0.3s ease;
+  --header-height: 72px;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
 }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-height) + 8px);
+}
+
 body {
-	line-height: 1;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-black);
+  background-color: var(--color-white);
+  -webkit-font-smoothing: antialiased;
 }
-ol, ul {
-	list-style: none;
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
-blockquote, q {
-	quotes: none;
+
+a {
+  color: var(--color-orange);
+  text-decoration: none;
+  transition: color var(--transition);
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-	content: none;
+
+a:hover {
+  color: var(--color-orange-dark);
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+
+:focus-visible {
+  outline: 3px solid var(--color-orange);
+  outline-offset: 2px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.section {
+  padding: 3.5rem 0;
+}
+
+.section-header {
+  max-width: 640px;
+  margin-bottom: 2.5rem;
+}
+
+.section-header.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.section-tag {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-orange);
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.25;
+  color: var(--color-black);
+}
+
+.section-title span {
+  color: var(--color-orange);
+}
+
+.section-subtitle {
+  margin-top: 0.75rem;
+  color: var(--color-gray);
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 9999;
+  background: var(--color-orange);
+  color: var(--color-white);
+  padding: 0.75rem 1.25rem;
+  border-radius: 0 0 var(--radius) 0;
+  font-weight: 700;
+}
+
+.skip-link:focus {
+  left: 0;
+  color: var(--color-white);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.8rem 1.6rem;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.btn-primary {
+  background: var(--color-orange);
+  color: var(--color-white);
+}
+
+.btn-primary:hover {
+  background: var(--color-orange-dark);
+  color: var(--color-white);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-whatsapp {
+  background: var(--color-whatsapp);
+  color: var(--color-white);
+}
+
+.btn-whatsapp:hover {
+  background: var(--color-whatsapp-dark);
+  color: var(--color-white);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-outline {
+  border-color: var(--color-orange);
+  color: var(--color-orange);
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: var(--color-orange);
+  color: var(--color-white);
+  transform: translateY(-2px);
+}
+
+.btn-dark {
+  background: var(--color-graphite);
+  color: var(--color-white);
+}
+
+.btn-dark:hover {
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+.card {
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-light);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ============ PÁGINAS LEGAIS ============ */
+.legal-header {
+  padding: 1rem 0;
+  background: var(--color-black);
+  border-bottom: 3px solid var(--color-orange);
+}
+
+.legal-header img {
+  height: 44px;
+  width: auto;
+}
+
+.legal-page {
+  padding: 3rem 0 4rem;
+}
+
+.legal-page h1 {
+  margin-bottom: 1rem;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.7rem;
+  color: var(--color-black);
+}
+
+.legal-page h2 {
+  margin: 1.5rem 0 0.5rem;
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  color: var(--color-orange-dark);
+}
+
+.legal-page p,
+.legal-page li {
+  margin-bottom: 0.75rem;
+  color: var(--color-gray-dark);
+}
+
+.legal-page ul {
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+
+.legal-page .legal-date {
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--color-gray);
+}
+
+.legal-back {
+  display: inline-block;
+  margin-top: 2rem;
+  font-weight: 700;
 }

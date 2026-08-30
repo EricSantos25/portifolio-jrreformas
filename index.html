@@ -3,215 +3,706 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="/images/logo/favicon.ico">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/style-480.css">
-  <link rel="stylesheet" href="/css/style-768.css">
-  <link rel="stylesheet" href="/css/style-1024.css">
-  <title>JR Construções Em Geral</title>
+  <title>JR Construções | Reformas, Construção e Manutenção Predial em São Paulo</title>
+  <meta name="description" content="Especialistas em reformas, construção civil e manutenção predial para condomínios, empresas e residências. Orçamento gratuito e sem compromisso. Fale conosco no WhatsApp.">
+  <meta name="keywords" content="reformas, construção civil, manutenção predial, elétrica, hidráulica, pintura, impermeabilização, drywall, gesso, fachadas, coberturas, São Paulo, condomínios">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="JR Reformas">
+  <meta name="theme-color" content="#111111">
+  <link rel="canonical" href="https://portifolio-jrreformas.vercel.app/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="JR Reformas | Reformas, Construção e Manutenção Predial">
+  <meta property="og:description" content="Reformas, construção civil e manutenção predial para condomínios, empresas e residências. Orçamento gratuito e sem compromisso.">
+  <meta property="og:image" content="https://portifolio-jrreformas.vercel.app/images/logo/jr-contrucoes_logo_dark.svg">
+  <meta property="og:url" content="https://portifolio-jrreformas.vercel.app/">
+  <meta property="og:site_name" content="JR Reformas">
+  <meta property="og:locale" content="pt_BR">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="JR Reformas | Reformas, Construção e Manutenção Predial">
+  <meta name="twitter:description" content="Reformas, construção civil e manutenção predial para condomínios, empresas e residências. Orçamento gratuito e sem compromisso.">
+  <meta name="twitter:image" content="https://portifolio-jrreformas.vercel.app/images/logo/jr-contrucoes_logo_dark.svg">
+
+  <link rel="icon" type="image/x-icon" href="images/logo/favicon.ico">
+  <link rel="apple-touch-icon" href="images/logo/apple-touch-icon.png">
+  <link rel="manifest" href="images/logo/site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-480.css">
+  <link rel="stylesheet" href="css/style-768.css">
+  <link rel="stylesheet" href="css/style-1024.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "GeneralContractor",
+    "name": "JR Construções",
+    "description": "Execução de obras, reformas e manutenções prediais para condomínios, empresas, comércios e residências.",
+    "url": "https://portifolio-jrreformas.vercel.app/",
+    "telephone": "+5511971951905",
+    "email": "pedro.cirojunior@hotmail.com",
+    "priceRange": "$$",
+    "image": "https://portifolio-jrreformas.vercel.app/images/logo/jr-contrucoes_logo_dark.svg",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "São Paulo",
+      "addressRegion": "SP",
+      "addressCountry": "BR"
+    },
+    "areaServed": "Brasil",
+    "openingHours": "Mo-Sa 08:00-18:00",
+    "sameAs": []
+  }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Pular para o conteúdo principal</a>
+
   <header id="cabecalho">
-    <a href="#home-article"><img src="images/logo/apple-touch-icon.png" alt="Logo JR Construções" width="100px" height="100px"></a>
-    <i id="icon-menuBurger" class="fa-solid fa-bars" onclick="showMenu()"></i>
-    <nav id="menu-container">
+    <a class="logo" href="#home-article" aria-label="JR Reformas - página inicial">
+      <img src="images/logo/jr-contrucoes_logo_dark.svg" alt="Logo JR Reformas" width="200" height="58">
+    </a>
+    <button id="icon-menuBurger" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="menu-container">
+      <i class="fa-solid fa-bars" aria-hidden="true"></i>
+    </button>
+    <nav id="menu-container" aria-label="Menu principal">
       <ul>
-        <li class="links"><a id="home" href="#home-article" onclick="scrollSection(600)">Home</a></li>
-        <li class="links"><a id="services" href="#services-article" onclick="scrollSection(100)">Serviços</a></li>
-        <li class="links"><a id="customers" href="#customer-article" onclick="scrollSection(300)" >Clientes</a></li>
-        <li class="links"><a id="projects" href="#projects-article" onclick="scrollSection(600)">Projetos</a></li>
-        <li class="links"><a id="contact" href="#contact-article" onclick="scrollSection(900)">Contato</a></li>
+        <li><a href="#home-article">Home</a></li>
+        <li><a href="#about-article">Sobre</a></li>
+        <li><a href="#services-article">Serviços</a></li>
+        <li><a href="#customers-article">Clientes</a></li>
+        <li><a href="#projects-article">Projetos</a></li>
+
+        <li><a href="#faq-article">FAQ</a></li>
+        <li><a href="#contact-article">Contato</a></li>
       </ul>
+      <div class="menu-cta">
+        <a class="btn btn-primary" href="#contact-article">Solicitar Orçamento</a>
+        <a class="btn btn-whatsapp" href="https://wa.me/5511971951905?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20um%20servi%C3%A7o%20de%20constru%C3%A7%C3%A3o%2Freforma." target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp
+        </a>
+      </div>
     </nav>
   </header>
 
-  <article id="home-article">
-    <section id="text-section">
-      <h1>Transformando Espaços com Excelência</h1>
-      <h2>Especialista em Construção e Manutenção</h2>
-      <p>Serviços integrados de construção e manutenção, combinando inovação, sustentabilidade e excelência técnica para garantir resultados duradouros e satisfatórios. 
-        Com missão de transformar espaços com foco total na sua satisfação. 
-        De pequenas melhorias a grandes renovações, entregamos ambientes funcionais e esteticamente agradáveis com qualidade e comprometimento.
-      </p>
+  <main id="main-content">
+    <section id="home-article" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Transformando Espaços com <span>Excelência</span></h1>
+          <p class="hero-subtitle">Especialistas em reformas, construção e manutenção predial</p>
+          <p class="hero-description">
+            Há mais de 15 anos executamos obras e reformas para condomínios, empresas, comércios e residências com qualidade, segurança e compromisso com os prazos. Do projeto à entrega, cuidamos de cada detalhe para transformar suas ideias em realidade.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact-article">Solicitar Orçamento</a>
+            <a class="btn btn-whatsapp" href="https://wa.me/5511971951905?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20um%20servi%C3%A7o%20de%20constru%C3%A7%C3%A3o%2Freforma." target="_blank" rel="noopener">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Falar no WhatsApp
+            </a>
+          </div>
+          <ul class="hero-indicators">
+            <li><i class="fa-solid fa-bolt" aria-hidden="true"></i> Atendimento rápido</li>
+            <li><i class="fa-solid fa-file-invoice-dollar" aria-hidden="true"></i> Orçamento sem compromisso</li>
+            <li><i class="fa-solid fa-helmet-safety" aria-hidden="true"></i> Equipe especializada</li>
+          </ul>
+        </div>
+      </div>
     </section>
-      <img src="images/backgrounds/fundo.png" alt="img-fundo">
-  </article>
 
-  <main id="content">
-    <article id="services-article">
-      <section class="section-serviceCard"> 
-        <div class="circle"></div>
-        <i class="fa-solid fa-droplet icon"></i>
-        <p>
-          Serviços de hidráulica, desde instalações completas até pequenos reparos e manutenções. 
-          Materiais de alta qualidade e técnicas avançadas para garantir sistemas eficientes e duradouros.
-        </p>
-      </section>
-      <section class="section-serviceCard">
-        <hr>
-        <div class="circle"></div>
-        <i class="fa-solid fa-screwdriver-wrench icon"></i>
-        <p>
-          Serviços de reforma e conserto, transformando ambientes com eficiência e cuidado.
-          Seja uma renovação total ou pequenos ajustes, com foco em atender necessidades específicas. 
-        </p>
-      </section>
-      <section class="section-serviceCard">
-      <hr>
-        <div class="circle"></div>
-        <i class="fa-solid fa-plug-circle-check icon"></i>
-        <p>
-          Serviços que incluem a instalação de sistemas elétricos, atualizações e reparos de falhas. 
-          Uso de componentes de alta qualidade para assegurar a eficiência e a segurança dos seus ambientes.
-        </p>
-      </section>
-    </article>
+    <section id="about-article" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Quem somos</span>
+          <h2 class="section-title">Sobre a <span>JR Construções</span></h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-image reveal">
+            <img src="images/backgrounds/background.jpg" alt="Equipe da JR Reformas executando uma obra" loading="lazy">
+          </div>
+          <div class="about-text reveal">
+            <p>
+              Com mais de 15 anos de experiência no segmento da construção civil, a JR Construções é especializada em obras, reformas e manutenções prediais para condomínios, empresas, comércios e residências. Nosso compromisso é entregar serviços com alto padrão de qualidade, dentro do prazo e com total transparência.
+            </p>
+            <p>
+              Trabalhamos com equipe própria e qualificada, materiais de fornecedores confiáveis e processos que garantem segurança em todas as etapas da obra — da visita técnica à entrega final.
+            </p>
+            <div class="about-values">
+              <div class="value-item">
+                <i class="fa-solid fa-bullseye" aria-hidden="true"></i>
+                <div>
+                  <strong>Missão</strong>
+                  <span>Transformar espaços com qualidade, segurança e responsabilidade, superando as expectativas dos nossos clientes.</span>
+                </div>
+              </div>
+              <div class="value-item">
+                <i class="fa-solid fa-handshake" aria-hidden="true"></i>
+                <div>
+                  <strong>Valores</strong>
+                  <span>Qualidade, transparência, segurança, respeito aos prazos e cuidado com cada detalhe da obra.</span>
+                </div>
+              </div>
+              <div class="value-item">
+                <i class="fa-solid fa-medal" aria-hidden="true"></i>
+                <div>
+                  <strong>Experiência</strong>
+                  <span>Mais de 500 obras concluídas e centenas de clientes satisfeitos em todo o estado de São Paulo.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <article id="customer-article">
-      <ul>
-        <li><a href="https://vextreengenharia.com.br">Vextre Engenharia</a></li>
-        <li><a href="https://www.vivareal.com.br/condominio/varanda-ipiranga-ipiranga-id-89d71f7c-c3ad/">Condomínio Varanda Ipiranga</a></li>
-        <li><a href="#">Condomínio Edificio Rio Negro</a></li>
-        <li><a href="#">Condomínio Gran Village Club</a></li>
-        <li><a href="https://www.roofingconstrutora.com.br">Roofing Engenharia e Construção</a></li>
-      </ul>
-    </article>
+    <section id="services-article" class="section">
+      <div class="container">
+        <div class="section-header center reveal">
+          <span class="section-tag">Nossos serviços</span>
+          <h2 class="section-title">Soluções completas para o seu <span>projeto</span></h2>
+          <p class="section-subtitle">Da construção à manutenção, executamos serviços com equipe especializada e materiais de alta qualidade.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card card reveal">
+            <div class="service-icon"><i class="fa-solid fa-hammer" aria-hidden="true"></i></div>
+            <h3>Construção Civil</h3>
+            <p>Execução de obras completas, do projeto à entrega, com engenharia e mão de obra qualificada.</p>
+          </article>
+          <article class="service-card card reveal">
+            <div class="service-icon"><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i></div>
+            <h3>Reformas</h3>
+            <p>Renovação total ou parcial de ambientes, com planejamento e cuidado em cada detalhe.</p>
+          </article>
+          <article class="service-card card reveal">
+            <div class="service-icon"><i class="fa-solid fa-building" aria-hidden="true"></i></div>
+            <h3>Manutenção Predial</h3>
+            <p>Manutenção preventiva e corretiva para condomínios e empresas, garantindo segurança e funcionalidade.</p>
+          </article>
+          <article class="service-card card reveal">
+            <div class="service-icon"><i class="fa-solid fa-bolt" aria-hidden="true"></i></div>
+            <h3>Elétrica</h3>
+            <p>Instalações, atualizações e reparos de sistemas elétricos com componentes de alta qualidade.</p>
+          </article>
+          <article class="service-card card reveal">
+            <div class="service-icon"><i class="fa-solid fa-faucet" aria-hidden="true"></i></div>
+            <h3>Hidráulica</h3>
+            <p>Instalações completas, reparos e manutenção de sistemas hidráulicos eficientes e duráveis.</p>
+          </article>
+          <article class="service-card card reveal">
+            <div class="service-icon"><i class="fa-solid fa-paint-roller" aria-hidden="true"></i></div>
+            <h3>Pintura</h3>
+            <p>Pintura interna e externa com acabamento profissional e tintas de alta durabilidade.</p>
+          </article>
+          <article class="service-card card reveal">
+            <div class="service-icon"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></div>
+            <h3>Alvenaria</h3>
+            <p>Construção de paredes, muros e estruturas em alvenaria com precisão e resistência.</p>
+          </article>
+          <article class="service-card card reveal">
+            <div class="service-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
+            <h3>Impermeabilização</h3>
+            <p>Proteção contra infiltrações e umidade com técnicas e materiais modernos.</p>
+          </article>
+          <article class="service-card card reveal">
+            <div class="service-icon"><i class="fa-solid fa-border-all" aria-hidden="true"></i></div>
+            <h3>Drywall</h3>
+            <p>Paredes e forros em drywall com rapidez, limpeza e excelente acabamento.</p>
+          </article>
+          <article class="service-card card reveal">
+            <div class="service-icon"><i class="fa-solid fa-paint-brush" aria-hidden="true"></i></div>
+            <h3>Gesso</h3>
+            <p>Forros, sancas e detalhes em gesso para um acabamento elegante e sofisticado.</p>
+          </article>
+          <article class="service-card card reveal">
+            <div class="service-icon"><i class="fa-solid fa-archway" aria-hidden="true"></i></div>
+            <h3>Fachadas</h3>
+            <p>Reforma e revitalização de fachadas com técnicas de acesso em altura e segurança.</p>
+          </article>
+          <article class="service-card card reveal">
+            <div class="service-icon"><i class="fa-solid fa-trowel" aria-hidden="true"></i></div>
+            <h3>Coberturas</h3>
+            <p>Instalação, reforma e manutenção de telhados e coberturas com vedação garantida.</p>
+          </article>
+          <article class="service-card card reveal">
+            <div class="service-icon"><i class="fa-solid fa-plug-circle-check" aria-hidden="true"></i></div>
+            <h3>Instalações</h3>
+            <p>Instalação de sistemas, equipamentos e infraestrutura para condomínios e empresas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-    <article id="projects-article">
-      <ul class="images-container">
-        <li><img src="images/projects/projeto-1.jpeg" alt="" onclick="openModal();currentSlide(1)"></li>
-        <li><img src="images/projects/projeto-2.jpeg" alt="" onclick="openModal();currentSlide(2)"></li>
-        <li><img src="images/projects/projeto-3.jpeg" alt="" onclick="openModal();currentSlide(3)"></li>
-        <li><img src="images/projects/projeto-4.jpeg" alt="" onclick="openModal();currentSlide(4)"></li>
-        <li><img src="images/projects/projeto-5.jpeg" alt="" onclick="openModal();currentSlide(5)"></li>
-        <li><img src="images/projects/projeto-6.jpeg" alt="" onclick="openModal();currentSlide(6)"></li>
-        <li><img src="images/projects/projeto-7.jpeg" alt="" onclick="openModal();currentSlide(7)"></li>
-        <li><img src="images/projects/projeto-8.jpeg" alt="" onclick="openModal();currentSlide(8)"></li>
-        <li><img src="images/projects/projeto-9.jpeg" alt="" onclick="openModal();currentSlide(9)"></li>
-        <li><img src="images/projects/projeto-10.jpeg" alt="" onclick="openModal();currentSlide(10)"></li>
-        <li><img src="images/projects/projeto-11.jpeg" alt="" onclick="openModal();currentSlide(11)"></li>
-        <li><img src="images/projects/projeto-12.jpeg" alt="" onclick="openModal();currentSlide(12)"></li>
-        <li><img src="images/projects/projeto-13.jpeg" alt="" onclick="openModal();currentSlide(13)"></li>
-        <li><img src="images/projects/projeto-14.jpeg" alt="" onclick="openModal();currentSlide(14)"></li>
-        <li><img src="images/projects/projeto-15.jpeg" alt="" onclick="openModal();currentSlide(15)"></li>
-        <li><img src="images/projects/projeto-16.jpeg" alt="" onclick="openModal();currentSlide(16)"></li>
-        <li><img src="images/projects/projeto-17.jpeg" alt="" onclick="openModal();currentSlide(17)"></li>
-        <li><img src="images/projects/projeto-18.jpeg" alt="" onclick="openModal();currentSlide(18)"></li>
-        <li><img src="images/projects/projeto-19.jpeg" alt="" onclick="openModal();currentSlide(19)"></li>
-        <li><img src="images/projects/projeto-20.jpeg" alt="" onclick="openModal();currentSlide(20)"></li>
-        <li><img src="images/projects/projeto-21.jpg" alt="" onclick="openModal();currentSlide(21)"></li>
-        <li><img src="images/projects/projeto-22.jpg" alt="" onclick="openModal();currentSlide(22)"></li>
-        <li><img src="images/projects/projeto-23.jpg" alt="" onclick="openModal();currentSlide(23)"></li>
-      </ul>
-      <figure id="modal" class="modal">
-        <span class="close cursor" onclick="closeModal()">&times;</span>
-        <section class="modal-content">
+    <section id="segments-article" class="section">
+      <div class="container">
+        <div class="section-header center reveal">
+          <span class="section-tag">Segmentos atendidos</span>
+          <h2 class="section-title">Atendemos todos os <span>tipos de cliente</span></h2>
+          <p class="section-subtitle">Soluções sob medida para cada necessidade.</p>
+        </div>
+        <div class="segments-grid">
+          <div class="segment-item reveal">
+            <i class="fa-solid fa-building" aria-hidden="true"></i>
+            <strong>Condomínios</strong>
+            <span>Áreas comuns, fachadas e manutenção predial.</span>
+          </div>
+          <div class="segment-item reveal">
+            <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+            <strong>Empresas</strong>
+            <span>Obras e reformas corporativas.</span>
+          </div>
+          <div class="segment-item reveal">
+            <i class="fa-solid fa-store" aria-hidden="true"></i>
+            <strong>Comércios</strong>
+            <span>Projetos para lojas e pontos comerciais.</span>
+          </div>
+          <div class="segment-item reveal">
+            <i class="fa-solid fa-house" aria-hidden="true"></i>
+            <strong>Residências</strong>
+            <span>Reformas completas e personalizadas.</span>
+          </div>
+          <div class="segment-item reveal">
+            <i class="fa-solid fa-building-columns" aria-hidden="true"></i>
+            <strong>Escritórios</strong>
+            <span>Espaços funcionais e modernos.</span>
+          </div>
+          <div class="segment-item reveal">
+            <i class="fa-solid fa-industry" aria-hidden="true"></i>
+            <strong>Indústrias</strong>
+            <span>Manutenção e obras industriais.</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <li class="slides">
-            <img src="images/projects/projeto-1.jpeg" alt="" onclick="openModal()">
-          </li>
-          <li class="slides">
-            <img src="images/projects/projeto-2.jpeg" alt="" onclick="openModal()">
-          </li>
-          <li class="slides">
-            <img src="images/projects/projeto-3.jpeg" alt="" onclick="openModal()">
-          </li>
-          <li class="slides">
-            <img src="images/projects/projeto-4.jpeg" alt="" onclick="openModal()">
-          </li>
-          <li class="slides">
-            <img src="images/projects/projeto-5.jpeg" alt="" onclick="openModal()">
-          </li>
-          <li class="slides">
-            <img src="images/projects/projeto-6.jpeg" alt="" onclick="openModal()">
-          </li>
-          <li class="slides">
-            <img src="images/projects/projeto-7.jpeg" alt="" onclick="openModal()">
-          </li>
-          <li class="slides">
-            <img src="images/projects/projeto-8.jpeg" alt="" onclick="openModal()">
-          </li>
-          <li class="slides">
-            <img src="images/projects/projeto-9.jpeg" alt="" onclick="openModal()">
-          </li>
-          <li class="slides">
-            <img src="images/projects/projeto-10.jpeg" alt="" onclick="openModal()">
-          </li>
-          <li class="slides">
-            <img src="images/projects/projeto-11.jpeg" alt="" onclick="openModal()">
-          </li>
-          <li class="slides">
-            <img src="images/projects/projeto-12.jpeg" alt="" onclick="openModal()">
-          </li>
-          <li class="slides">
-            <img src="images/projects/projeto-13.jpeg" alt="" onclick="openModal()">
-          </li>
-          <li class="slides">
-            <img src="images/projects/projeto-14.jpeg" alt="" onclick="openModal()">
-          </li>
-          <li class="slides">
-            <img src="images/projects/projeto-15.jpeg" alt="" onclick="openModal()">
-          </li>
-          <li class="slides">
-            <img src="images/projects/projeto-16.jpeg" alt="" onclick="openModal()">
-          </li>
-          <li class="slides">
-            <img src="images/projects/projeto-17.jpeg" alt="" onclick="openModal()">
-          </li>
-          <li class="slides">
-            <img src="images/projects/projeto-18.jpeg" alt="" onclick="openModal()">
-          </li>
-          <li class="slides">
-            <img src="images/projects/projeto-19.jpeg" alt="" onclick="openModal()">
-          </li>
-          <li class="slides">
-            <img src="images/projects/projeto-20.jpeg" alt="" onclick="openModal()">
-          </li>
-          <li class="slides">
-            <img src="images/projects/projeto-21.jpg" alt="" onclick="openModal()">
-          </li>
-          <li class="slides">
-            <img src="images/projects/projeto-22.jpg" alt="" onclick="openModal()">
-          </li>
-          <li class="slides">
-            <img src="images/projects/projeto-23.jpg" alt="" onclick="openModal()">
-          </li>
+    <section id="customers-article" class="section">
+      <div class="container">
+        <div class="section-header center reveal">
+          <span class="section-tag">Nossos clientes</span>
+          <h2 class="section-title">Confiança de quem <span>já trabalhou com a gente</span></h2>
+        </div>
+        <div class="clients-grid">
+          <a class="client-item reveal" href="https://vextreengenharia.com.br" target="_blank" rel="noopener">Vextre Engenharia</a>
+          <a class="client-item reveal" href="https://www.vivareal.com.br/condominio/varanda-ipiranga-ipiranga-id-89d71f7c-c3ad/" target="_blank" rel="noopener">Condomínio Varanda Ipiranga</a>
+          <a class="client-item reveal" href="#customers-article">Condomínio Escritório Rio Negro</a>
+          <a class="client-item reveal" href="#customers-article">Condomínio Gran Village Club</a>
+          <a class="client-item reveal" href="https://www.roofingconstrutora.com.br" target="_blank" rel="noopener">Roofing Engenharia e Construção</a>
+        </div>
+      </div>
+    </section>
 
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </section>
-      </figure>
-    </article>
+    <section id="diferenciais-article" class="section">
+      <div class="container">
+        <div class="section-header center reveal">
+          <span class="section-tag">Por que nos escolher</span>
+          <h2 class="section-title">Nossos <span>diferenciais</span></h2>
+          <p class="section-subtitle">Qualidade e confiança em cada etapa do seu projeto.</p>
+        </div>
+        <div class="diferenciais-grid">
+          <article class="diferencial-card card reveal">
+            <i class="fa-solid fa-user-gear" aria-hidden="true"></i>
+            <h3>Equipe qualificada</h3>
+            <p>Profissionais treinados e certificados.</p>
+          </article>
+          <article class="diferencial-card card reveal">
+            <i class="fa-solid fa-handshake" aria-hidden="true"></i>
+            <h3>Atendimento personalizado</h3>
+            <p>Cada projeto é único e recebe atenção exclusiva.</p>
+          </article>
+          <article class="diferencial-card card reveal">
+            <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+            <h3>Materiais de qualidade</h3>
+            <p>Fornecedores confiáveis e materiais certificados.</p>
+          </article>
+          <article class="diferencial-card card reveal">
+            <i class="fa-solid fa-award" aria-hidden="true"></i>
+            <h3>Garantia dos serviços</h3>
+            <p>Tranquilidade e suporte após a entrega.</p>
+          </article>
+          <article class="diferencial-card card reveal">
+            <i class="fa-solid fa-clock" aria-hidden="true"></i>
+            <h3>Cumprimento de prazos</h3>
+            <p>Cronograma claro e respeito ao combinado.</p>
+          </article>
+          <article class="diferencial-card card reveal">
+            <i class="fa-solid fa-file-contract" aria-hidden="true"></i>
+            <h3>Transparência</h3>
+            <p>Orçamento detalhado e comunicação aberta.</p>
+          </article>
+          <article class="diferencial-card card reveal">
+            <i class="fa-solid fa-helmet-safety" aria-hidden="true"></i>
+            <h3>Segurança</h3>
+            <p>EPIs, normas e processos seguros na obra.</p>
+          </article>
+          <article class="diferencial-card card reveal">
+            <i class="fa-solid fa-broom" aria-hidden="true"></i>
+            <h3>Limpeza pós-obra</h3>
+            <p>Entregamos o ambiente limpo e organizado.</p>
+          </article>
+          <article class="diferencial-card card reveal">
+            <i class="fa-solid fa-file-invoice" aria-hidden="true"></i>
+            <h3>Emissão de nota fiscal</h3>
+            <p>Documentação correta para sua empresa.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="process-article" class="section">
+      <div class="container">
+        <div class="section-header center reveal">
+          <span class="section-tag">Como trabalhamos</span>
+          <h2 class="section-title">Um processo simples e <span>transparente</span></h2>
+        </div>
+        <div class="steps-grid">
+          <div class="step-item card reveal">
+            <span class="step-number">01</span>
+            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+            <h3>Contato</h3>
+            <p>Você fala com a gente pelo WhatsApp, telefone ou formulário.</p>
+          </div>
+          <div class="step-item card reveal">
+            <span class="step-number">02</span>
+            <i class="fa-solid fa-clipboard-check" aria-hidden="true"></i>
+            <h3>Visita técnica</h3>
+            <p>Avaliamos o local e entendemos suas necessidades.</p>
+          </div>
+          <div class="step-item card reveal">
+            <span class="step-number">03</span>
+            <i class="fa-solid fa-file-invoice-dollar" aria-hidden="true"></i>
+            <h3>Orçamento</h3>
+            <p>Enviamos uma proposta detalhada e transparente.</p>
+          </div>
+          <div class="step-item card reveal">
+            <span class="step-number">04</span>
+            <i class="fa-solid fa-check-double" aria-hidden="true"></i>
+            <h3>Aprovação</h3>
+            <p>Você aprova e alinhamos o cronograma de execução.</p>
+          </div>
+          <div class="step-item card reveal">
+            <span class="step-number">05</span>
+            <i class="fa-solid fa-helmet-safety" aria-hidden="true"></i>
+            <h3>Execução</h3>
+            <p>Executamos a obra com qualidade e segurança.</p>
+          </div>
+          <div class="step-item card reveal">
+            <span class="step-number">06</span>
+            <i class="fa-solid fa-hand-holding-heart" aria-hidden="true"></i>
+            <h3>Entrega</h3>
+            <p>Entregamos o ambiente limpo e com garantia.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects-article" class="section">
+      <div class="container">
+        <div class="section-header center reveal">
+          <span class="section-tag">Galeria</span>
+          <h2 class="section-title">Projetos <span>realizados</span></h2>
+          <p class="section-subtitle">Clique nas imagens para ampliar e conhecer nossos trabalhos.</p>
+        </div>
+        <div class="gallery-grid" id="gallery-grid">
+          <figure class="gallery-item"><img src="images/projects/projeto-1.jpeg" alt="Obra executada pela JR Construções - projeto 1" loading="lazy"></figure>
+          <figure class="gallery-item"><img src="images/projects/projeto-2.jpeg" alt="Obra executada pela JR Construções - projeto 2" loading="lazy"></figure>
+          <figure class="gallery-item"><img src="images/projects/projeto-3.jpeg" alt="Obra executada pela JR Construções - projeto 3" loading="lazy"></figure>
+          <figure class="gallery-item"><img src="images/projects/projeto-4.jpeg" alt="Obra executada pela JR Construções - projeto 4" loading="lazy"></figure>
+          <figure class="gallery-item"><img src="images/projects/projeto-5.jpeg" alt="Obra executada pela JR Construções - projeto 5" loading="lazy"></figure>
+          <figure class="gallery-item"><img src="images/projects/projeto-6.jpeg" alt="Obra executada pela JR Construções - projeto 6" loading="lazy"></figure>
+          <figure class="gallery-item"><img src="images/projects/projeto-7.jpeg" alt="Obra executada pela JR Construções - projeto 7" loading="lazy"></figure>
+          <figure class="gallery-item"><img src="images/projects/projeto-8.jpeg" alt="Obra executada pela JR Construções - projeto 8" loading="lazy"></figure>
+          <figure class="gallery-item"><img src="images/projects/projeto-9.jpeg" alt="Obra executada pela JR Construções - projeto 9" loading="lazy"></figure>
+          <figure class="gallery-item"><img src="images/projects/projeto-10.jpeg" alt="Obra executada pela JR Construções - projeto 10" loading="lazy"></figure>
+          <figure class="gallery-item"><img src="images/projects/projeto-11.jpeg" alt="Obra executada pela JR Construções - projeto 11" loading="lazy"></figure>
+          <figure class="gallery-item"><img src="images/projects/projeto-12.jpeg" alt="Obra executada pela JR Construções - projeto 12" loading="lazy"></figure>
+          <figure class="gallery-item"><img src="images/projects/projeto-13.jpeg" alt="Obra executada pela JR Construções - projeto 13" loading="lazy"></figure>
+          <figure class="gallery-item"><img src="images/projects/projeto-14.jpeg" alt="Obra executada pela JR Construções - projeto 14" loading="lazy"></figure>
+          <figure class="gallery-item"><img src="images/projects/projeto-15.jpeg" alt="Obra executada pela JR Construções - projeto 15" loading="lazy"></figure>
+          <figure class="gallery-item"><img src="images/projects/projeto-16.jpeg" alt="Obra executada pela JR Construções - projeto 16" loading="lazy"></figure>
+          <figure class="gallery-item"><img src="images/projects/projeto-17.jpeg" alt="Obra executada pela JR Construções - projeto 17" loading="lazy"></figure>
+          <figure class="gallery-item"><img src="images/projects/projeto-18.jpeg" alt="Obra executada pela JR Construções - projeto 18" loading="lazy"></figure>
+          <figure class="gallery-item"><img src="images/projects/projeto-19.jpeg" alt="Obra executada pela JR Construções - projeto 19" loading="lazy"></figure>
+          <figure class="gallery-item"><img src="images/projects/projeto-20.jpeg" alt="Obra executada pela JR Construções - projeto 20" loading="lazy"></figure>
+        </div>
+      </div>
+    </section>
+
+    <figure id="modal" class="modal" aria-hidden="true">
+      <button class="close" aria-label="Fechar galeria">&times;</button>
+      <div class="modal-content"></div>
+    </figure>
+
+    <section id="stats-article" class="section">
+      <div class="container">
+        <div class="section-header center reveal">
+          <span class="section-tag">Nossos números</span>
+          <h2 class="section-title">Qualidade que pode ser <span>comprovada</span></h2>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-item reveal">
+            <i class="fa-solid fa-award" aria-hidden="true"></i>
+            <span class="stat-number" data-target="15" data-suffix="+">0</span>
+            <span class="stat-label">Anos de experiência</span>
+          </div>
+          <div class="stat-item reveal">
+            <i class="fa-solid fa-hammer" aria-hidden="true"></i>
+            <span class="stat-number" data-target="500" data-suffix="+">0</span>
+            <span class="stat-label">Obras executadas</span>
+          </div>
+          <div class="stat-item reveal">
+            <i class="fa-solid fa-users" aria-hidden="true"></i>
+            <span class="stat-number" data-target="300" data-suffix="+">0</span>
+            <span class="stat-label">Clientes atendidos</span>
+          </div>
+          <div class="stat-item reveal">
+            <i class="fa-solid fa-face-smile" aria-hidden="true"></i>
+            <span class="stat-number" data-target="98" data-suffix="%">0</span>
+            <span class="stat-label">Satisfação dos clientes</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="faq-article" class="section">
+      <div class="container">
+        <div class="section-header center reveal">
+          <span class="section-tag">Dúvidas frequentes</span>
+          <h2 class="section-title">Perguntas <span>frequentes</span></h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq1">
+              <span>O orçamento é cobrado?</span>
+              <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+            </button>
+            <div class="faq-answer" id="faq1">
+              <p>Não. O orçamento é gratuito e sem compromisso. Realizamos uma avaliação do seu projeto e enviamos a proposta detalhada.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq2">
+              <span>Quais tipos de serviço vocês executam?</span>
+              <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+            </button>
+            <div class="faq-answer" id="faq2">
+              <p>Construção civil, reformas, manutenção predial, elétrica, hidráulica, pintura, impermeabilização, drywall, gesso, fachadas e coberturas, entre outros.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq3">
+              <span>Atendem condomínios e empresas?</span>
+              <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+            </button>
+            <div class="faq-answer" id="faq3">
+              <p>Sim. Atuamos em condomínios, empresas, comércios, indústrias e residências em todo o estado de São Paulo.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq4">
+              <span>Os serviços têm garantia?</span>
+              <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+            </button>
+            <div class="faq-answer" id="faq4">
+              <p>Sim. Todos os serviços são executados com materiais de qualidade e contam com garantia, além de emissão de nota fiscal.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq5">
+              <span>Qual o prazo médio para execução?</span>
+              <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+            </button>
+            <div class="faq-answer" id="faq5">
+              <p>O prazo depende da complexidade do projeto. Após a visita técnica apresentamos um cronograma claro com as datas de início e conclusão.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq6">
+              <span>Como solicito um orçamento?</span>
+              <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+            </button>
+            <div class="faq-answer" id="faq6">
+              <p>Preencha o formulário de contato ou chame a gente no WhatsApp. Nossa equipe responde rapidamente.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-article" class="section">
+      <div class="container">
+        <div class="section-header center reveal">
+          <span class="section-tag">Contato</span>
+          <h2 class="section-title">Solicite seu <span>orçamento</span></h2>
+          <p class="section-subtitle">Preencha o formulário e receba uma proposta gratuita em poucos minutos.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <div class="contact-item">
+              <span class="contact-icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></span>
+              <div>
+                <strong>Telefone / WhatsApp</strong>
+                <a href="https://wa.me/5511971951905?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20um%20servi%C3%A7o%20de%20constru%C3%A7%C3%A3o%2Freforma." target="_blank" rel="noopener">(11) 97195-1905</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></span>
+              <div>
+                <strong>E-mail</strong>
+                <a href="mailto:pedro.cirojunior@hotmail.com">pedro.cirojunior@hotmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
+              <div>
+                <strong>Local de atendimento</strong>
+                <span>São Paulo - SP, Brasil</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon"><i class="fa-solid fa-clock" aria-hidden="true"></i></span>
+              <div>
+                <strong>Horário de atendimento</strong>
+                <span>Segunda a sábado, das 08h às 18h</span>
+              </div>
+            </div>
+
+          </div>
+          <div class="contact-form-wrap reveal">
+            <h3>Envie sua solicitação</h3>
+            <form id="formulario" novalidate>
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="nome">Nome *</label>
+                  <input type="text" id="nome" name="nome" placeholder="Seu nome completo" autocomplete="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="empresa">Empresa</label>
+                  <input type="text" id="empresa" name="empresa" placeholder="Nome da empresa (opcional)" autocomplete="organization">
+                </div>
+                <div class="form-group">
+                  <label for="telefone">Telefone *</label>
+                  <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" autocomplete="tel" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">E-mail *</label>
+                  <input type="email" id="email" name="email" placeholder="seu@email.com" autocomplete="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="cidade">Cidade</label>
+                  <input type="text" id="cidade" name="cidade" placeholder="Sua cidade" autocomplete="address-level2">
+                </div>
+                <div class="form-group">
+                  <label for="servico">Serviço desejado *</label>
+                  <select id="servico" name="servico" required>
+                    <option value="">Selecione o serviço</option>
+                    <option>Construção Civil</option>
+                    <option>Reformas</option>
+                    <option>Manutenção Predial</option>
+                    <option>Elétrica</option>
+                    <option>Hidráulica</option>
+                    <option>Pintura</option>
+                    <option>Alvenaria</option>
+                    <option>Impermeabilização</option>
+                    <option>Drywall</option>
+                    <option>Gesso</option>
+                    <option>Fachadas</option>
+                    <option>Coberturas</option>
+                    <option>Instalações</option>
+                    <option>Outro</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="mensagem">Mensagem *</label>
+                <textarea id="mensagem" name="mensagem" maxlength="1000" placeholder="Descreva o serviço que você precisa" required></textarea>
+              </div>
+              <div class="form-group form-consent">
+                <input type="checkbox" id="lgpd" name="lgpd" required>
+                <label for="lgpd">
+                  Concordo que os dados informados serão utilizados apenas para retorno do meu contato, conforme a
+                  <a href="privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a>. *
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary btn-submit">
+                <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Solicitar Orçamento
+              </button>
+              <p class="form-note">
+                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                Ao enviar, você será direcionado ao WhatsApp com sua mensagem pronta.
+                Prefere e-mail? <a href="#" id="mailto-link">Enviar por e-mail</a>.
+              </p>
+              <div id="form-feedback" class="form-feedback" role="alert" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+
   <footer id="rodape">
-    <article id="contact-article">
-      <section id="contact">
-          <h3>Entre em contato</h3>
-          <p>
-            Se você tem um projeto em mente ou precisa de manutenção, estamos prontos para ajudar. 
-            Entre em contato conosco para discutir suas necessidades e como podemos transformar suas ideias em realidade.
-          </p>
-          <i class="fa-regular fa-envelope icon-contact" aria-hidden="true">
-            <p><a href="mailto:jrconstruções2024@outlook.com">jrconstruções2024@outlook.com</a></p>
-          </i>
-          <i class="fa-brands fa-whatsapp icon-contact" aria-hidden="true">
-            <p><a href="https://api.whatsapp.com/send/?phone=%2B5511971951905&text=Ol%C3%A1%2C%20desejo%20conhecer%20a%20JR%20Construções&app_absent=0" target="_blank">(11) 97195-1905</a></p>
-          </i>
-          <p>
-            Estamos ansiosos para colaborar com você!
-          </p>
-        </section>
-        <form id="formulario">
-          <input type="text" id="nome" placeholder="Nome" required>
-          <input type="email" id="email" placeholder="Email" required>
-          <textarea id="comentario" placeholder="Comentário" required></textarea>
-          <button class="form-button" type="button" onclick="enviarForms()">Enviar</button>
-        </form>
-    </article>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="logo" href="#home-article" aria-label="JR Reformas - página inicial">
+            <img src="images/logo/jr-contrucoes_logo_dark.svg" alt="Logo JR Reformas" width="200" height="58">
+          </a>
+          <p>Especialistas em obras, reformas e manutenção predial para condomínios, empresas, comércios e residências, com qualidade e compromisso.</p>
+
+        </div>
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#home-article">Home</a></li>
+            <li><a href="#about-article">Sobre</a></li>
+            <li><a href="#services-article">Serviços</a></li>
+            <li><a href="#projects-article">Projetos</a></li>
+            <li><a href="#faq-article">FAQ</a></li>
+            <li><a href="#contact-article">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Serviços</h4>
+          <ul>
+            <li><a href="#services-article">Construção Civil</a></li>
+            <li><a href="#services-article">Reformas</a></li>
+            <li><a href="#services-article">Manutenção Predial</a></li>
+            <li><a href="#services-article">Elétrica e Hidráulica</a></li>
+            <li><a href="#services-article">Pintura</a></li>
+            <li><a href="#services-article">Impermeabilização</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <ul>
+            <li><a href="https://wa.me/5511971951905?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20um%20servi%C3%A7o%20de%20constru%C3%A7%C3%A3o%2Freforma." target="_blank" rel="noopener">(11) 97195-1905</a></li>
+            <li><a href="mailto:pedro.cirojunior@hotmail.com">pedro.cirojunior@hotmail.com</a></li>
+            <li><span>São Paulo - SP, Brasil</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year">2026</span> JR Construções. Todos os direitos reservados.</p>
+        <div class="footer-legal">
+          <a href="privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a> |
+          <a href="termos.html" target="_blank" rel="noopener">Termos de Uso</a>
+        </div>
+      </div>
+    </div>
   </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/5511971951905?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20um%20servi%C3%A7o%20de%20constru%C3%A7%C3%A3o%2Freforma." target="_blank" rel="noopener" aria-label="Falar com a JR Construções no WhatsApp">
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+  </a>
+
   <script src="js/showMenu.js"></script>
   <script src="js/slide.js"></script>
   <script src="js/form.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
