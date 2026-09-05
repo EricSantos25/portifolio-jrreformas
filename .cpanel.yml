@@ -1,0 +1,15 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home1/pedroj11/public_html/
+    - /bin/rm -rf ${DEPLOYPATH}css ${DEPLOYPATH}images ${DEPLOYPATH}js
+    - /bin/rm -f ${DEPLOYPATH}index.html ${DEPLOYPATH}privacidade.html ${DEPLOYPATH}robots.txt ${DEPLOYPATH}sitemap.xml ${DEPLOYPATH}termos.html ${DEPLOYPATH}.htaccess
+    - /bin/cp -R css $DEPLOYPATH
+    - /bin/cp -R images $DEPLOYPATH
+    - /bin/cp -R js $DEPLOYPATH
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp privacidade.html $DEPLOYPATH
+    - /bin/cp robots.txt $DEPLOYPATH
+    - /bin/cp sitemap.xml $DEPLOYPATH
+    - /bin/cp termos.html $DEPLOYPATH
+    - /bin/cp .htaccess $DEPLOYPATH
