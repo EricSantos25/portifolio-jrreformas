@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jrcontrucoes.com/sitemap.xml
+Sitemap: https://juniorconstrucoes.com.br/sitemap.xml
